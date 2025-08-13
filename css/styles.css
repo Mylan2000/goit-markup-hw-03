@@ -252,7 +252,7 @@ img { display: block;
   }
 
 .project-info { 
-  padding: 20px 16px; 
+  padding: 32px 16px; 
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -274,6 +274,8 @@ img { display: block;
  }
 
 .footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
   font-family: "Raleway", sans-serif; 
   font-weight: 700; 
   font-size: 18px; 
