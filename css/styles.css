@@ -171,8 +171,8 @@ img { display: block;
   padding: 120px 0; 
   background: #f4f4fd;
  }
-.section-title {
-  margin: 0 0 48px; 
+.team .section-title {
+  margin: 0 0 72px; 
   font-size: 36px; 
   line-height: 1.11; 
   letter-spacing: 0.02em; 
@@ -181,16 +181,20 @@ img { display: block;
   color: #2e2f42;
 }
 .team-list { 
-  display: grid; 
-  grid-template-columns: repeat(4,minmax(0,1fr)); 
+  display: flex; 
   gap: 24px; 
 }
 
 .team-card { 
   background: #fff;
-   border-radius: 4px; 
+  width: calc((100% - 72px) / 4);
+   border-radius: 0 0 4px 4px; 
    overflow: hidden; 
    box-shadow: 0 2px 8px rgba(46,47,66,.08);
+   }
+
+   .team-info {
+    padding: 32px 0;
    }
 
 .team-photo { 
@@ -199,8 +203,8 @@ img { display: block;
   object-fit: cover; 
 }
 
-.card-title { 
-  margin: 16px 0 8px; 
+.team .card-title { 
+  margin: 0 0 8px; 
   text-align: center; 
   font-weight: 500; 
   font-size: 20px; 
@@ -209,8 +213,8 @@ img { display: block;
   color: #2e2f42; 
 }
 
-.card-text {
-   margin: 0 0 24px; 
+.team .card-text {
+   margin: 0; 
    text-align: center; 
    font-size: 16px; 
    line-height: 1.5; 
